@@ -78,7 +78,7 @@ namespace ConsoleApp1
             //    •	element - 2 : 2
             //    •	.......
             //    •	Expected Output :
-            //    •	Elements in array are: 1 1 2 3 4 5 6 7 8 9
+            //    •	Elements in array are: 1 1 2 3 4 5 6 7 8 9 99
 
 
             string[] elements = new string[10];
