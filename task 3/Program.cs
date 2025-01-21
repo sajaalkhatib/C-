@@ -70,6 +70,22 @@ namespace task_3
                 Console.WriteLine();
             }
         }
+        static void pattern()
+        {
+          for(int i = 1; i <= 4; ++i)
+            {
+                for(int j = 1; j <= 4; ++j)
+                {
+                    Console.WriteLine(" ");
+                }
+                for(int k = 1; k <= 4; ++k)
+                {
+                    Console.WriteLine("*");
+                }
+                Console.WriteLine( " ");
+            }
+           Console.ReadLine();
+        }
 
 
         class Room
@@ -159,35 +175,41 @@ namespace task_3
             PrintNumberPattern(n);
 
 
+            pattern();
+
             //Class && Object
-            Console.WriteLine("Enter details for 2 rooms:");
+            //Console.WriteLine("Enter details for 2 rooms:");
 
-            Room[] rooms = new Room[2];
+            //Room[] rooms = new Room[2];
 
-            for (int i = 0; i < rooms.Length; i++)
-            {
-                Console.WriteLine($"\nRoom {i + 1}:");
-                Console.Write("Enter Room Number: ");
-                int roomNumber = int.Parse(Console.ReadLine());
+            //for (int i = 0; i < rooms.Length; i++)
+            //{
+            //    Console.WriteLine($"\nRoom {i + 1}:");
+            //    Console.Write("Enter Room Number: ");
+            //    int roomNumber = int.Parse(Console.ReadLine());
 
-                Console.Write("Enter Room Type (e.g., Single, Double, Suite): ");
-                string roomType = Console.ReadLine();
+            //    Console.Write("Enter Room Type (e.g., Single, Double, Suite): ");
+            //    string roomType = Console.ReadLine();
 
-                Console.Write("Enter Price Per Night: ");
-                double pricePerNight = double.Parse(Console.ReadLine());
+            //    Console.Write("Enter Price Per Night: ");
+            //    double pricePerNight = double.Parse(Console.ReadLine());
 
-                Console.Write("Is the Room Booked? (true/false): ");
-                bool isBooked = bool.Parse(Console.ReadLine());
+            //    Console.Write("Is the Room Booked? (true/false): ");
+            //    bool isBooked = bool.Parse(Console.ReadLine());
 
-                rooms[i] = new Room();
-                rooms[i].SetRoomDetails(roomNumber, roomType, pricePerNight, isBooked);
-            }
+            //    rooms[i] = new Room();
+            //    rooms[i].SetRoomDetails(roomNumber, roomType, pricePerNight, isBooked);
+            //}
 
-            Console.WriteLine("\nRoom Details:");
-            foreach (var room in rooms)
-            {
-                room.DisplayDetails();
-            }
+            //Console.WriteLine("\nRoom Details:");
+            //foreach (var room in rooms)
+            //{
+            //    room.DisplayDetails();
+            //}
+
+
+
+            //(optional)
 
         }
     }
